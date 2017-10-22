@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SCenViewViewController.h"
 @interface ViewController ()
 
 @end
@@ -25,5 +25,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickBtn:(id)sender {
+    
+    SCenViewViewController * vc = [[SCenViewViewController alloc]init];
+    [self presentViewController:vc animated:true completion:nil];
+}
 
 @end

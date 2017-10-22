@@ -10,9 +10,10 @@
 		0683198B1F6025F2005CC99B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0683198A1F6025F2005CC99B /* AppDelegate.m */; };
 		0683198E1F6025F2005CC99B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0683198D1F6025F2005CC99B /* ViewController.m */; };
 		068319911F6025F2005CC99B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0683198F1F6025F2005CC99B /* Main.storyboard */; };
-		068319931F6025F2005CC99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068319921F6025F2005CC99B /* Assets.xcassets */; };
 		068319961F6025F2005CC99B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068319941F6025F2005CC99B /* LaunchScreen.storyboard */; };
 		068319991F6025F2005CC99B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068319981F6025F2005CC99B /* main.m */; };
+		068319A11F6026C7005CC99B /* SCenViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068319A01F6026C7005CC99B /* SCenViewViewController.m */; };
+		068319A41F602E01005CC99B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 068319A31F602D9D005CC99B /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,13 @@
 		0683198C1F6025F2005CC99B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0683198D1F6025F2005CC99B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		068319901F6025F2005CC99B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		068319921F6025F2005CC99B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068319951F6025F2005CC99B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		068319971F6025F2005CC99B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		068319981F6025F2005CC99B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0683199F1F6026C7005CC99B /* SCenViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCenViewViewController.h; sourceTree = "<group>"; };
+		068319A01F6026C7005CC99B /* SCenViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCenViewViewController.m; sourceTree = "<group>"; };
+		068319A21F602D77005CC99B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		068319A31F602D9D005CC99B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,11 @@
 				0683198A1F6025F2005CC99B /* AppDelegate.m */,
 				0683198C1F6025F2005CC99B /* ViewController.h */,
 				0683198D1F6025F2005CC99B /* ViewController.m */,
+				0683199F1F6026C7005CC99B /* SCenViewViewController.h */,
+				068319A01F6026C7005CC99B /* SCenViewViewController.m */,
 				0683198F1F6025F2005CC99B /* Main.storyboard */,
-				068319921F6025F2005CC99B /* Assets.xcassets */,
+				068319A31F602D9D005CC99B /* art.scnassets */,
+				068319A21F602D77005CC99B /* Assets.xcassets */,
 				068319941F6025F2005CC99B /* LaunchScreen.storyboard */,
 				068319971F6025F2005CC99B /* Info.plist */,
 				068319981F6025F2005CC99B /* main.m */,
@@ -129,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				068319961F6025F2005CC99B /* LaunchScreen.storyboard in Resources */,
-				068319931F6025F2005CC99B /* Assets.xcassets in Resources */,
+				068319A41F602E01005CC99B /* art.scnassets in Resources */,
 				068319911F6025F2005CC99B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 			files = (
 				0683198E1F6025F2005CC99B /* ViewController.m in Sources */,
 				068319991F6025F2005CC99B /* main.m in Sources */,
+				068319A11F6026C7005CC99B /* SCenViewViewController.m in Sources */,
 				0683198B1F6025F2005CC99B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE477286W4;
 				INFOPLIST_FILE = "太陽系1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "j20010320-hotmail.com.---1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcd.MTFARKitOntObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,9 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE477286W4;
 				INFOPLIST_FILE = "太陽系1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "j20010320-hotmail.com.---1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcd.MTFARKitOntObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
